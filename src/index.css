@@ -1,0 +1,413 @@
+@font-face {
+  font-family: 'NomDeLaPolice'; 
+  src: url('./assets/fonts/soria-font.ttf') format('truetype'); 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: NomDeLaPolice;
+  background-color: #2B3A38;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1{
+  font-size: 125px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 4px 6px rgba(0, 0, 0, 0.200);
+}
+h2{
+  font-size: 80px;
+  font-weight: 200;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
+h3{
+  font-size: 40px;
+  font-weight: 200;
+  color: #ffffff;
+  margin-top: 15px;
+}
+header{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.396);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+.burguer{
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+header img{
+  width: 95px;
+  margin-left: 5px;
+}
+.background-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('./assets/images/YAL_0120.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.background-normal{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #2B3A38;
+}
+.space{
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  color: transparent;
+  width: 30%;
+  border-bottom: #ffffff solid 5px;
+}
+.btn{
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 100;
+  background-color: white;
+  padding: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.AudioBtn{
+  border: none; 
+  background-color: #03400C;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 50px;
+  font-weight: 100;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.262);
+  cursor: pointer;
+}
+.text{
+  color: white;
+  font-size: 24px;
+  margin-top: 5%;
+
+  padding: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cards {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.card{
+  flex: 0 0 auto; 
+
+width: 30%;
+
+position: relative;
+
+  height: 30rem;
+
+  border-radius: 5px;
+  margin: 0 0.5rem; 
+
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 100;
+  border-radius: 5px;
+}
+.card .filter{
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.212);
+  border-radius: 5px;
+}
+.card .filter .AudioBtn{
+  position: absolute;
+  bottom: 50px;
+  right: 30px; 
+}
+.card .filter h3{
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  letter-spacing: 3px;
+}
+.card .filter p{
+  font-size: 16px;
+  color: white;
+  font-weight: 100;
+  position: absolute;
+  top: 55%;
+  right: 30px;
+  width: 250px;
+}
+.modal{
+  position: absolute;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+.modal h2{
+
+  margin-top: 5%;
+  text-align: center;
+}
+.navigation{
+  display: none;
+}
+.navigation img{
+  cursor: pointer;
+}
+.burguer{
+
+  cursor: pointer;
+}
+.burguer img{
+  cursor: pointer;
+}
+.blockTitle{
+  margin: auto;
+  width: 80%;
+
+  margin-top: 5%;
+}
+.blockTitle h1{
+  margin: 0;
+  font-size: 100px;
+  
+}
+.blockTitle p{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 3%;
+}
+.blockIMGTXT{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+
+
+}
+.IMG{
+
+  width: 50%;
+}
+.IMG img{
+  width: 100%;
+  border-radius: 5px;
+}
+.TXT{
+  width: 35%;
+}
+.TXT h3{
+  margin: 5%;
+  text-align: justify;
+  margin-top: 30%;
+}
+.LinkIntro{
+  background-color: white;
+  color: #03400C;
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 5%;
+}
+@media (max-width: 1115px) {
+  .blockTitle h1{
+    margin: 0;
+    font-size: 50px;
+    
+  }
+  .blockTitle p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .blockIMGTXT{
+    display: block
+
+  }
+  .blockIMGTXT .IMG{
+    width: 100%;
+  }
+  .blockIMGTXT .TXT{
+    width: 100%;
+    margin-top: 20px;
+   
+
+  }
+  .blockIMGTXT .TXT h3{
+    font-size: 19px;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .LinkIntro{
+    position: relative;
+    font-size: 19px;
+    padding: 10px;
+ 
+
+  }
+  h1{
+    font-size: 80px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    text-shadow: 4px 6px rgba(0, 0, 0, 0.200);
+  }
+  h2{
+    font-size: 40px;
+  } 
+ 
+ .cards {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    margin-top: 20px;
+    height: 27rem;
+    width: 23rem; 
+    margin-left: 0;
+    margin-bottom: 1%;
+  }
+
+  .space{
+    margin-top: 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .directionPanel{
+    display: none;
+
+  }
+ 
+  .menupanel{
+    display: none;
+  }
+  .navigation{
+    margin-top: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .navLink{
+    width: 100%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 55px;
+    border-bottom: 2px solid white;
+
+  }
+}
+@media (max-width: 500px) {
+  .navigation{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .navLink{
+    width: 100%;
+    margin-bottom: 15%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 55px;
+    border-bottom: 2px solid white;
+
+  }
+  .navLink:last-child{
+    margin-bottom: 0;
+  }
+
+  .modal h2{
+    width: 80%;
+
+  
+      margin-top: 5%;
+      margin-left: 10px;
+  
+   
+    text-align: left;
+  }
+}
+.directionPanel{
+  margin-left: auto;
+  margin-right: auto;
+  width: 54%;
+}
+.menupanel{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.video {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+.videocontainer {
+  width: 100%;
+  height: 100%;
+  height: auto;                                                                                                                                                                    
+}
+
