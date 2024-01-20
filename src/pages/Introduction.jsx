@@ -1,62 +1,49 @@
-import React from 'react';
-import Navbar from '../components/navbar';
-import IMAGES from '../assets/images/IMAGES';
-import LinkIntro from '../components/LinkIntro';
+import React from "react";
+import Navbar from "../components/navbar";
+import IMAGES from "../assets/images/IMAGES";
+import LinkIntro from "../components/LinkIntro";
+import Parcours from "../components/Parcours";
+import { useState } from "react";
+import Footer from "../components/Footer";
 function Introduction() {
-    return (
-        <div>
-            <Navbar />
-            <div className='blockTitle'>
-            <h1>L echo Des Ecologues</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-            </div>
-            <div className='blockIMGTXT'>
-                <div className="IMG">
-                    <img src={IMAGES.image6} alt="" />
-                </div>
-                <div className="TXT">
-                <h3>J’étudie la biodiversité, je cartographie les habitats et je sensibilise les acteurs du territoire.</h3>
-               
-
-                <LinkIntro Liens="/Interview"/>
-
-                   
-                </div>
-            </div>
-          
-            <div className='blockIMGTXT'>
-            
-           
-            <div className="IMG">
-                <img src={IMAGES.image3} alt="" />
-            </div>
-            <div className="TXT">
-            <h3>J’observe les oiseaux, les mamiféres, les poissons, les insectes et la flore également.</h3>
-           
-
-            <LinkIntro Liens="/audio"/>
-
-               
-            </div>
+  return (
+    <>
+      <Navbar />
+      <div className="blockTitle">
+        <h1>L'écho des écologues</h1>
+        <p>
+          Nous avons suivi Théo et Tanguy, deux écologues de l’association CPIE
+          Boucles de la Marne, lors de leur suivi mensuel des oiseaux dans le
+          parc du Pâtis.
+        </p>
+      </div>
+      <Parcours />
+      <h2 className="title2">Le Parc du Pâtis en quelque chiffres</h2>
+      <div className="chiffres">
+        <div className="block">
+          <h3>150</h3>
+          <p>Hectares</p>
         </div>
-        <div className='blockIMGTXT'>
-        <div className="IMG">
-                <img src={IMAGES.image7} alt="" />
-            </div>
-            <div className="TXT">
-            <h3>J’étudie ce que mes collégues ont rapporté et je met en place des projets pour préserver la biodiversité.</h3>
-           
-
-            <LinkIntro Liens="/article"/>
-
-               
-            </div>
-         
+        <div className="block">
+          <h3>130</h3>
+          <p>Espèces d'oiseaux</p>
         </div>
-
+        <div className="block">
+          <h3>300</h3>
+          <p>Espèces d'insectes</p>
         </div>
-    );
+        <div className="block">
+          <h3>12</h3>
+          <p>Espèces de mammifères</p>
+        </div>
+      </div>
+
+      <div className="carte">
+        <img src={IMAGES.image72} alt="Carte du parc" />
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 export default Introduction;
